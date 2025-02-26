@@ -1,4 +1,4 @@
-colorScheme = "blowfish"
+colorScheme = "forest"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 enableSearch = true
@@ -29,7 +29,7 @@ showMoreLinkDest = "/posts/"
 cardView = true
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
-homepageImage = "IMG_2876.jpeg"
+homepageImage = "none"
 
 [article]
 showDate = true
