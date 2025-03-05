@@ -5,24 +5,30 @@ none = "none"
 name = "About"
 pageRef = "about"
 identifier = "AuxZTgyn05"
-weight = 9999
+weight = 1
 
 [[main]]
 name = "Blog"
 pageRef = "blog"
 identifier = "34tDCy4sGL"
-weight = 9999
-
-[[main]]
-name = "Projects"
-pageRef = "projects"
-identifier = "LbCZwhZkOo"
-weight = 9999
+weight = 2
 
 [[main]]
 name = "Resume"
 pageRef = "resume"
 identifier = "wBE0FQbo3x"
+weight = 3
+
+[[main]]
+pre = "github"
+url = "https://github.com/Eonflip"
+identifier = "YFhUlafrjK"
+weight = 9999
+
+[[main]]
+pre = "email"
+url = "mailto:ijtech@proton.me"
+identifier = "nir8zxeQez"
 weight = 9999
 
 [[footer]]
