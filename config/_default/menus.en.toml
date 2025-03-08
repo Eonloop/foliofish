@@ -20,14 +20,20 @@ identifier = "wBE0FQbo3x"
 weight = 3
 
 [[main]]
+name = "Contact Me"
+pageRef = "contact"
+identifier = "1ttkm21ydu"
+weight = 4
+
+[[main]]
 pre = "github"
 url = "https://github.com/Eonflip"
 identifier = "YFhUlafrjK"
 weight = 9999
 
 [[main]]
-pre = "email"
-url = "mailto:ijtech@proton.me"
+pre = "linkedin"
+url = "https://linkedin.com/in/ianj1993"
 identifier = "nir8zxeQez"
 weight = 9999
 
