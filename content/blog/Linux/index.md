@@ -1,13 +1,14 @@
 ---
-title: "Testing"
-date: 2025-02-19
+title: "Linux"
+date: 2025-04-17
 draft: false
-description: "a description"
+description: "A page detailing Linux"
 tags: ["example", "tag"]
 featured_image: "./homelabAI.png"
 ---
  an example to get you started
-# This is a heading
+# What is Linux
+Linux is perhaps one of the most important modern operating systems
 ## This is a subheading
 ### This is a subsubheading
 #### This is a subsubsubheading

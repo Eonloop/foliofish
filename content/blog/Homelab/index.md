@@ -2,12 +2,12 @@
 title: "Homelab"
 date: 2025-02-19
 draft: false
-description: "a description"
+description: "detailing homelab"
 tags: ["example", "tag"]
 ---
  an example to get you started
-# This is a heading
-## This is a subheading
+# What is a Homelab?
+## Why should you build a Homelab?
 ### This is a subsubheading
 #### This is a subsubsubheading
 This is a paragraph with **bold** and *italic* text.
