@@ -64,7 +64,7 @@ layoutBackgroundHeaderSpace: false
     </tr>
     <tr>
       <td><img class="customEntityLogo" src="./images/enterprise.png" height=100 width=100 alt="Enterprise" /></td>
-      <td><a href="https://www.sky.de/" target="_blank">Enterprise</a></td>
+      <td><a href="https://www.enterprise.com/" target="_blank">Enterprise</a></td>
       <td>Assistant Branch Manager</td>
       <td>2016 - 2019</td>
       <td>Sarasota, FL</td>
