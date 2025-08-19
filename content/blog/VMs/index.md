@@ -1,5 +1,5 @@
 ---
-title: "Virtual Machines - The Workhorse In My Homelab"
+title: "Virtual Machines"
 date: 2025-03-05
 description: "Why have just 1 Operating System?"
 layout: "index"
