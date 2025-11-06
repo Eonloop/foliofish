@@ -46,7 +46,7 @@ layoutBackgroundHeaderSpace: false
       <td><a href="https://www.geturgently.com/" target="_blank">Urgently</a></td>
       <td>Training and Development Specialist</td>
       <td>Feb 2024 - Nov 2024</td>
-      <td>Full Remote<br>Denver, CO</td>
+      <td>Remote<br>Denver, CO</td>
     </tr>
     <tr>
       <td><img class="customEntityLogo" src="./images/hm.png" alt="Happy Money" height=100 width=100/></td>
@@ -60,7 +60,7 @@ layoutBackgroundHeaderSpace: false
       <td><a href="https://www.snapdocs.com/" target="_blank">Snapdocs</a></td>
       <td>Training Specialist</td>
       <td>2020 - 2022</td>
-      <td>Full Remote<br>San Fransisco, CA</td>
+      <td>Remote<br>San Fransisco, CA</td>
     </tr>
     <tr>
       <td><img class="customEntityLogo" src="./images/enterprise.png" height=100 width=100 alt="Enterprise" /></td>

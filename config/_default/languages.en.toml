@@ -13,6 +13,6 @@ logo = ""
   [params.author]
     image="IMG_0542.JPG"
     name = "Ian Jones"
-    links = [ { bluesky = "https://bsky.app/profile/eonloop.bsky.social" }, { github = "https://github.com/Eonflip" }, { linkedin = "https://www.linkedin.com/in/ianj1993/" } ]
+    links = [ { bluesky = "https://bsky.app/profile/eonloop.bsky.social" }, { github = "https://github.com/eonloop" }, { linkedin = "https://www.linkedin.com/in/ianj1993/" } ]
     headline = "Tech, Books, Nature"
 
