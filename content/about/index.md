@@ -28,7 +28,9 @@ While I’ve gained significant hands-on experience architecting environments in
 
 - **Operating Systems:** Linux (Ubuntu, Debian, RHEL), macOS, Windows
 
-- **Tools & Databases:** Docker, FastAPI, Git
+- **Tools:** Docker, FastAPI, Git
+
+- **Databases:** SQLite3, Postgres
 
 ---
 
