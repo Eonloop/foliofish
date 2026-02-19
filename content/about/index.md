@@ -6,7 +6,7 @@ draft = false
 
 Hello! I’m **Ian**, a technology professional with seven years of experience in startups, and enterprise environments.
 
-Currently, I serve as an **IT Knowledge Management Specialist** at The Anschutz Corporation while pursuing a B.S. in **Applied Computer Science at CU Boulder**. My professional background in project, knowledge, and change management—combined with my academic focus—has fueled a deep interest in **DevOps, MLOps, and Cybersecurity**.
+Currently, I serve as an **IT Knowledge Management Specialist** at The Anschutz Corporation while pursuing a B.S. in **Applied Computer Science at CU Boulder**. My professional background in project, knowledge, and change management combined with my academic focus has fueled a deep interest in **DevOps, MLOps, and Cybersecurity**.
 
 While I’ve gained significant hands-on experience architecting environments in my **homelab** with Proxmox, Docker, and Kubernetes, my time at CU Boulder has provided the theoretical depth to match. My coursework includes:
 
