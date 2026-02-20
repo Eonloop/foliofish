@@ -175,4 +175,19 @@ I think that this well is extremely deep and I even took a look at training my o
 I've been getting more and more excited about this project as I've worked on it, I feel like I'm just scraping the surface. 
 
 
+--- 
+### 02/19/2026
 
+#### Last Weeks Work
+Last week I didn't get as much traction on this project because I got an ear infection (fun) but I tried to center around following course content around word embeddings in my NLP course it was helpful to learn some more content about cosine similarity comparisons for vector embeddings as that's going to be the primary method that I'm going to utilize with my ChromaDB implementation.
+
+I did get a chance this week to get a working document ingestion -> chunking -> embedding -> indexing script working where it's able to take a local document path and embed that into a ChromaDB .sqlite3 file, it was interesting to learn that ChromaDB is using sqlite3 behind the scenes so I spent some time exploring how the data is stored in the ChromaDB tables. 
+
+#### Next Weeks Work
+Now that I've got the ingestion script working, the next step will be to write a query script to be able to ask natural language questions of the database. Once I'm able to get top-k results back in a query I think I'll be able to start fine tuning the ingestion and query script so that I can start working on the front-end and FastAPI connectors. 
+
+#### Impediments
+Getting over being sick! Seriously though I think the only impediment will be ensuring that I continue along the path, I front-loaded a lot of the research so I think that I know where I'm going with this, the only tricky part may be measuring the results, I'll have to see how I can measure the effectiveness of the ingestion and search.
+
+#### Reflections
+Weirdly being sick actually helped me focus on what was important, I asked myself what I wanted the end of the week to look like and to get a working ingestion flow where I was able to verify that a simple .md file was embedded into my chroma.sqlite3 was a huge win for me because now I've got a large part of the main functionality down, which is a huge relief for me. I think that getting the query script up now sounds exciting because it will snowball from there (not to jinx myself). Sometimes I can really get overwhelmed with what I think I should get done in a week, but with being sick and referencing my roadmap I think that really centered me this week.
