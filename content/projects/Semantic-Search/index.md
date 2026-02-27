@@ -191,3 +191,12 @@ Getting over being sick! Seriously though I think the only impediment will be en
 
 #### Reflections
 Weirdly being sick actually helped me focus on what was important, I asked myself what I wanted the end of the week to look like and to get a working ingestion flow where I was able to verify that a simple .md file was embedded into my chroma.sqlite3 was a huge win for me because now I've got a large part of the main functionality down, which is a huge relief for me. I think that getting the query script up now sounds exciting because it will snowball from there (not to jinx myself). Sometimes I can really get overwhelmed with what I think I should get done in a week, but with being sick and referencing my roadmap I think that really centered me this week.
+
+
+---
+### 02/26/2026
+Last week I had a better time working forward with my project, I started to think about what the query script might look like. Before I could test out a query script I decided to start pulling in documentation in .docx, .pdf and .md format.
+
+I was thinking about where I could find some solid documentation that was decently related so I decided to start pulling terms and conditions pages from different technology companies. I've heard many jokes that no one reads those anyway so I figured hey why not have a language model read them instead. So I found 6 different terms and conditions documents from apple, microsoft, google, github, meta, and proton and split them evenly between .docx, .pdf, and .md formatting.
+
+After I had my documents, I realized how annoying it was to ingest them one by one so I altered my ingestion script to 
