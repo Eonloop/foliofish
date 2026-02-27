@@ -195,8 +195,33 @@ Weirdly being sick actually helped me focus on what was important, I asked mysel
 
 ---
 ### 02/26/2026
+
+### Last Weeks Work
 Last week I had a better time working forward with my project, I started to think about what the query script might look like. Before I could test out a query script I decided to start pulling in documentation in .docx, .pdf and .md format.
 
 I was thinking about where I could find some solid documentation that was decently related so I decided to start pulling terms and conditions pages from different technology companies. I've heard many jokes that no one reads those anyway so I figured hey why not have a language model read them instead. So I found 6 different terms and conditions documents from apple, microsoft, google, github, meta, and proton and split them evenly between .docx, .pdf, and .md formatting.
 
-After I had my documents, I realized how annoying it was to ingest them one by one so I altered my ingestion script to 
+After I had my documents, I realized how annoying it was to ingest them one by one so I altered my ingestion script to handle directories with an ingest_directory function in my ingest class.
+
+Great! So ease-of-use improved and then I could start working on the query script, this was a little tricky because I didn't quite understand the [.query method](https://docs.trychroma.com/docs/querying-collections/query-and-get) of ChromaDB at first so I did some reading of documentation again this week, because ChromaDB has become the heart and soul of this project essentially. Go figure I could ask AI about what I was looking for in their documentation. Incredible! So after figuring out how to pass in query strings to ChromaDB I was able to test out the cosine simliarity results of a query looking for "Refunds" and I was able to get the top 2 results. It wasn't formatted, so it's not beautiful but check it out: 
+
+```bash
+((venv312) ) ianj in ~/Code/semantix/app on main ● λ python3 query.py
+Enter your query: Refund policy 
+Document: ['B. PAYMENTS, TAXES, AND REFUNDS', 'days old. We reserve the right to issue refunds or credits at our sole discretion. If we issue a refund or credit, we are under no obligation to issue\nthe same or similar refund in the future. This refund policy does not affect any statutory rights that may apply. For more refund information,\nplease visit our help topic (https://go.microsoft.com/fwlink/p/?linkid=618283).\ng. Canceling the Services. You may cancel a Service at any time, with or without cause. Cancelling paid Services stops future charges to continue\nthe Service. To cancel a Service and request a refund, if you are entitled to one, visit the Microsoft account management website. You can request\na refund from Skype using the Cancellation and Refund form (https://go.microsoft.com/fwlink/p/?linkid=618286). You should refer back to the\noffer describing the Services as (i) you may not receive a refund at the time of cancellation; (ii) you may be obligated to pay cancellation charges;']
+Metadata: [{'chunk_index': 2, 'source': '/Users/ianj/Code/semantix/data/policies/Apple_Media_Services_Terms_and_Conditions.docx'}, {'source': '/Users/ianj/Code/semantix/data/policies/Microsoft_Services_Agreement.pdf', 'chunk_index': 46}]
+```
+
+SO wow voila we now have a working Semantic Search Engine, I'm so excited and happy to see that I was able to get this up and running. 
+
+
+### This Weeks Work
+This week it's going to be testing, and building out the end user interface. I'll be going through and writing some unit tests using pytest to try and measure expected outputs, once I've got some solid unit tests in place I'm going to start working on the user frontend, some basic html, css, and javascript should be easy enough to stand up for a small search bar and document upload button. I don't want to aim for more than that because I'm aiming at basic functionality currently. Once I've got those both working I think I'll be able to start moving on to connecting everything with FastAPI! I'm very excited I feel like my workflow has become a lot more clear.
+
+### Impediments
+
+I think my biggest impediment will be understanding how to measure the results that I'm getting returned, I want to measure precision and recall so I'll be working on how to measure those effictively from my queries, the unit test methods will probably just be for the code function and I'll have to come up with a more creative solution for measuring the model itself, as I think about this it starts to become one of the harder portions of this in my mind!
+
+### Reflections
+
+Getting the basic functionality working is a huge relief, but now comes the cleaning, tuning, connecting and measuring, which may actually be just as important as the functionality itself, because I want a consistent tool that doesn't produce unexpected behaviors. I'm starting to reflect on how I can now answer the question; so what? So what you can return results, how accurate and precise are they? How many errors does your code produce? I think I'm starting to really see the systems thinking for these models and it's reframing my general thought around natural language models in general.
