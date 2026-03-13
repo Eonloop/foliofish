@@ -225,3 +225,31 @@ I think my biggest impediment will be understanding how to measure the results t
 ### Reflections
 
 Getting the basic functionality working is a huge relief, but now comes the cleaning, tuning, connecting and measuring, which may actually be just as important as the functionality itself, because I want a consistent tool that doesn't produce unexpected behaviors. I'm starting to reflect on how I can now answer the question; so what? So what you can return results, how accurate and precise are they? How many errors does your code produce? I think I'm starting to really see the systems thinking for these models and it's reframing my general thought around natural language models in general.
+
+
+---
+### 03/12/2026
+
+### Last Weeks Work
+Last week I spent a considerable amount of time looking through [Pytest](docs.pytest.org) documentation. I had never used this tool before but everything that I read pointed me towards this for Python unit testing. After utilizing it, it makes perfect sense, but I spent a considerable amount of time wrapping my head around some of it's conventions.
+
+conftest.py and fixtures for example. [This page](https://docs.pytest.org/en/stable/reference/fixtures.html#fixtures) was invaluable in the pytest documentation, it covered what fixtures are and what conftest files are useful for. In short conftest.py is a convention that pytest utilizes to make functions, class calls and fixtures avaiable across tests. This is super useful because it keeps everything very modular and you don't have to repeat yourself in every unit test file. 
+
+Fixtures on the other hand were useful to me due to the fact that they create a temporary environment for each test. It's basically a way to stand up and tear down structures and memory without having to do that every single time by running your entire program. For me this was particularly useful because to actually test the functionality of my ingest.py and query.py scripts I would have had to create a new chromadb instance every single time, and to honest that can get messy. So instead the @pytest.fixture convention just basically calls those functions every time and cleans them up afterwards, very much reminiscient of memory managment in C++ but for folders, so that was a fun parallel!
+
+Specifically the tests I wrote cover things like verifying that unsupported file types are rejected, that ingesting the same file twice doesn't create duplicates in ChromaDB, that metadata like the source file and chunk index are stored correctly, and that querying for something like "refund policy" actually returns text chunks containing information about refunds. Nothing too crazy but it gives me confidence that the core plumbing is working the way I expect it to.
+
+I think another challenging piece this week was ensuring that I focused on getting the unit tests running and having an honest conversation with myself about the initial scope of the project. In my NLP class I've been really enjoying measuring the precision, recall and f-scores of models, but that's a way to measure the effectiveness of the model I'm utilizing and while that may be exciting I think to make sure that I've got a finished product I needed to focus on the unit tests first. The model that I'm utilizing from Hugging Face (sentence-transformers/all-MiniLM-L6-v2) can be something that I measure after I've got everything working, because right now I'm building the harness and functionality. I can assess effectiveness once I've accomplished all my goals. So I went with some basic unit tests to ensure that I'm getting expected return text chunks that I know are in the test data and not necessarily measuring against other documentation just yet. 
+
+Overall I'm really happy with how much I learned about the pytest unit testing framework this week, and pending model performance I have a working prototype at the very least.
+
+### This Weeks Work
+
+This week I'll be really focused on building the UI for the Semantic Search Engine and wiring everything together with FastAPI. Once that's complete I'll be ready to build some more tests for model performance and to dockerize the application. I feel like I'm nearing the point where I can focus more on fine tuning than on learning the stack that will go into the application. I feel like I'm in a relatively decent place. 
+
+### Impediments
+This is the first week that I don't forsee any major impediments I don't know if I should be worried about that or not, but I feel pretty confident about the UI and FastAPI, probably because I'm more familiar with those than other tools I've worked with this semester for this project.
+
+### Reflections
+I think it was really interseting going through the pytest documentation and learning all of the different conventions utilized for this unit testing framework, I think I also didn't realize how involved the whole process would be to test the application, so that lead me to stopping a little short of everything I actually wanted to measure, I guess that's the beauty of the process of a project like this, I'm thinking of all of the ways that I could improve this past this class, because it really has become something I've loved to work on, especially with everything that I've learned!
+
