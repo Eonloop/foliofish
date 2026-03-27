@@ -253,3 +253,40 @@ This is the first week that I don't forsee any major impediments I don't know if
 ### Reflections
 I think it was really interseting going through the pytest documentation and learning all of the different conventions utilized for this unit testing framework, I think I also didn't realize how involved the whole process would be to test the application, so that lead me to stopping a little short of everything I actually wanted to measure, I guess that's the beauty of the process of a project like this, I'm thinking of all of the ways that I could improve this past this class, because it really has become something I've loved to work on, especially with everything that I've learned!
 
+
+---
+### 03/26/2026
+
+### Last Weeks Work
+
+Last week I spent quite a bit of time working on a basic UI for my semantic search to plug into, I was tempted to start with a Jinja template because I had been introduced to those in previous class assignments, but I didn't feel as confident utilizing them for my project so I stuck with a simple boilerplate HTML, CSS, Javascript implementation. It's certainly not the most beautiful but I've tested the functionality and it works, and that's a solid place to be at the moment. You can see an example here: 
+
+![Semantix example UI](./semantix-example.png)
+
+You can currently upload a file to the ChromaDB instance, which will be chunked, and embedded. 
+
+Once you've uploaded your file it will give you a message stating it has been ingested successfully, once the file has been ingested, you can then enter a search query and it will return the top 2 results. 
+
+![Search function](./search-results.png)
+
+I think the hardest part about the work this week was wiring everything with FastAPI, I ran into some snags, where I originally wrote my ingest.py script to accept files from the local file system, but the thing is if you want to be able to upload to a webpage like this, then you're not going to be giving it a local file path. So I worked around this by creating a temporary file directory when accessing the /ingest route.
+
+Overall I think that getting the basic functionality working from a front-end application like this was a huge win for me because it will allow me to move onto to fine tuning this interface and also working on dockerizing this basic iteration of the application, I'm excited to work on fine tuning both the UI and the actual measurements of this model that I'm currently utilizing. I'm not across the finish line yet but I'm feeling very close. (Although it feels like I could work on this for another year and still be having fun)
+
+
+### This Weeks Work
+
+This week I'll be focusing on dockerizing this application. I think the portability will be a huge win so that this can be spun up on any machine. The model should run on most modern hardware without issue so I'll do some testing across a couple of my machines to see if things work the way I expect, pending any issues with the dockerfile I'll start seeing if I can measure the models performance and tweak the UI to be a little bit prettier, so far I've made it look like a standard textbook, but I'd love for it to have a little more of an intuitive interface. Additionally something I'd like to add as a quality of life improvement, is the ability to clear the ChromaDB of previous documentation if the user would like to start fresh. Sometimes too much documentation can be a bad thing.
+
+
+### Impediments
+
+I think the biggest impediment for me this week will be my lack of knowledge with writing dockerfiles, I've used docker plenty before but I myself have never dockerized an application of my own to date. So this will be a fun experiment and part of why I included it in the original project scope. 
+
+
+### Reflections
+
+I think I'm shocked at how on track everything has actually felt. I think something that really stuck with me was how stuck I was getting in the beginning of the project on reading, researching, and planning. It was halting me a little bit. Once I realized that I didn't need a perfect application, just a working one I really started to get more into the flow of what I needed for this application to actually work, I'm proud today to say it is actually working. It's not perfect, and it's certainly not pretty, but it's functioning and that's a huge win for me. 
+
+I think the best part about having a working prototype like this is that everything else is just the cherry on top, from here I can make as many changes and improvements as I want, and oh will I. 
+
