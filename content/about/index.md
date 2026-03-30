@@ -26,7 +26,7 @@ While I’ve gained significant hands-on experience architecting environments in
 
 - **Infrastructure & Virtualization:** Proxmox VE, VMware, TrueNAS (ZFS)
 
-- **Operating Systems:** Linux (Ubuntu, Debian, RHEL), macOS, Windows
+- **Operating Systems:** Linux (Ubuntu, Debian, RHEL), MacOS, Windows
 
 - **Tools:** Docker, FastAPI, Git
 
