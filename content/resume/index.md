@@ -21,7 +21,7 @@ layoutBackgroundHeaderSpace: false
 
 ---
 
-<a href="../../assets/resume/Ian_Jones_Resume.pdf" download="Ian_Resume.pdf" class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500"> ⬇️ Download Resume </a>
+<a href="../../assets/resume/Ian_Jones_Resume.pdf" download="Ian_Jones_Resume.pdf" class="!rounded-md bg-primary-600 px-4 py-2 !text-neutral !no-underline hover:!bg-primary-500"> ⬇️ Download Resume </a>
 
 ## Experience
 
