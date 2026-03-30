@@ -14,7 +14,7 @@ While I’ve gained significant hands-on experience architecting environments in
 
 **Data & Intelligence:** Natural Language Processing, Data Science (Prob/Stats), Linear Algebra, Cognitive Science, Data Visualization.
 
-**Upcoming:** Machine Learning, Principles of Programming Languages.
+**Upcoming:** Design and Analysis of Operating Systems, Principles of Programming Languages.
 
 ---
 
