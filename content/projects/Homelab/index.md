@@ -1,5 +1,5 @@
 ---
-title: "My Homelab"
+title: "Homelab"
 date: 2026-01-30
 featured: "featured.png"
 draft: false
