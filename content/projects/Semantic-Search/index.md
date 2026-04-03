@@ -290,3 +290,60 @@ I think I'm shocked at how on track everything has actually felt. I think someth
 
 I think the best part about having a working prototype like this is that everything else is just the cherry on top, from here I can make as many changes and improvements as I want, and oh will I. 
 
+---
+### 04/02/2026
+
+### Last Weeks Work
+
+This last week between work and my other 2 classess I didn't have a ton of spare time, but I'm at the point where my final touches are becoming less and less. My biggest goal was to have a working dockerized semantic search application, and I can proudly say that is what I have. 
+
+I first went in and got my Dockerfile going it was actually a lot simpler than I was expecting it to be with the commands being very similiar to bash commands, reading the [Dockerfile documentation](https://docs.docker.com/reference/dockerfile/) was very enlightning I was able to select a minimal python version for the environment, add in a command that installs all dependencies, copy in the source code into the docker container and run the commands for the uvicorn web server. 
+
+```docker
+# Utilizing a slim version of Python to keep the image small
+FROM python:3.13-slim
+WORKDIR /app
+
+# Install application dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy in the source code
+COPY ./app ./app
+EXPOSE 8000
+
+# Run the uvicorn web server for the application
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+BUT my original stated goal was to also be able to run docker compose up to be able to build this app on any machine it's pulled to, and so I also needed a docker-compose.yml file for that, luckily I've actually spun up docker-compose files before in my homelab (I'd just never built one) the docker documentation is extensive (surprise surprise) and so I was able to find a quickstart that went over how to build a docker-compose file after you have a Dockerfile up and running [docker-compose quickstart documentation](https://docs.docker.com/compose/gettingstarted/)
+
+```yml
+services:
+  semantix:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - vector-data:/app/data
+volumes:
+  vector-data:
+```
+
+The volumes section may seem simple and benign here but it's keeping the vector database persistent in the docker container so that it doesn't disappear unless the docker container is deleted entirely, it can survive being spun up and down.
+
+So after all is said and done, I now have a repo you can pull down locally where all you need to do is run "docker-compose up --build" (and wait about 5 minutes for dependencies to install) and you've got a working semantic search engine locally running on your computer!
+
+Honestly Docker still feels like magic to me, so I've been thrilled to actually dockerize my first application, I'm going to have fun poking at Docker more in the future
+
+### This Weeks Work
+
+This week is all about testing, I've said it before I'll say it again I'd like to be able to measure the results that my semantic search engine is returning outside of the standard unit tests. I've looked into standing up some Mean Reciprocal Rank and Recall@K tests to see that the correct documents are surfaced for what I'm looking for, so likely I'll spend this week making a set of documents that I can confidently use to test these results.
+
+### Impediments
+
+I think as we near the end of the semester time management becomes even more relevant, just making sure to find enough time to clean up what I'd like, document the project, refactor any code that I'm not happy with and close the loop should be what's left, but managing these tasks and making enough time for all of them.
+
+### Reflections
+
+I think this class has more than anything given me an amazing confidence that I can build an NLP application end to end and have it run on anyones computer, this has been an incredible experience and I'm just scratching the surface so far, I can't wait to spend more time improving this application in the future and looking at more applications to build in the NLP space, I think up until this point I knew that I could write simple programs, but writing something like this end to end has been such an amazing experience and confidence boost overall!
