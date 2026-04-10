@@ -347,3 +347,23 @@ I think as we near the end of the semester time management becomes even more rel
 ### Reflections
 
 I think this class has more than anything given me an amazing confidence that I can build an NLP application end to end and have it run on anyones computer, this has been an incredible experience and I'm just scratching the surface so far, I can't wait to spend more time improving this application in the future and looking at more applications to build in the NLP space, I think up until this point I knew that I could write simple programs, but writing something like this end to end has been such an amazing experience and confidence boost overall!
+
+
+### 04/09/2026
+
+### Last Week's Work
+Last week I worked up [mean reciprocal rank (MRR)](https://milvus.io/ai-quick-reference/what-is-mean-reciprocal-rank-mrr-in-the-context-of-retrieval-evaluation-and-how-can-it-be-applied-to-gauge-how-well-a-rag-systems-retriever-finds-relevant-documents) and [recall@k](https://milvus.io/ai-quick-reference/what-is-recallatk) tests, these felt like the right way to assess my model after reading some of the Milvus documentation (another vector database). The goal was to ensure that the documentation I was retrieving was the expected document being surfaced. Since I've configured the application to return the top 2 results, I wanted both MRR and Recall@2 to reflect that the relevant document is appearing within those top 2 ideally scoring 1.0 on both, which is a perfect result for this setup.
+
+I think what I really ran into this week was the struggle of creating or finding a corpus for testing. I looked around for one I could use, but in the time I had I settled on creating some markdown files for a domain I have knowledge in (cybersecurity) and using those. With only 10 markdown files I was able to properly test my model and land a score of 1.0 for both MRR and Recall@2, which is a pleasant surprise but with a much larger corpus the test would prove to be more ironclad. Something to think about as I continue to improve this project over time.
+
+### This Week's Work
+
+This week, with my tests passing and my application in good shape, the focus is on documentation and cleanup. I want to make sure that everything is properly documented so that anyone can spin up and run the application and understand the architecture and design choices. I'm also going to go back and fix any unexpected behaviors specifically around file ingestion. Right now users can only upload one file at a time through the web front-end and FastAPI routes, and I'd like to bring back the folder upload functionality from my original ingestion script before the end of the semester. I really only noticed it being annoying when I wanted to upload my entire test document folder, but it's worth fixing before I wrap up.
+
+### Impediments
+
+No real impediments except for resisting the urge to tinker which is harder than it sounds. I'd love to keep tweaking and testing the application, but as the semester draws to a close, keeping the important final steps in mind is the priority. Documentation is going to be my most important final task. Everything works and is passing all of the tests I've written, so the goal now is to get to a clean stopping point with no remaining to-do's before going back in for any future improvements.
+
+### Reflections
+
+I think I realized the importance of data and corpus quality on a project like this. Over this semester I've had a solid deep dive into the data that goes into a transformer model and how much understanding it matters for the overall performance of the semantic search process. I have a new appreciation for just how much information is needed to truly test something like this.
