@@ -348,7 +348,7 @@ I think as we near the end of the semester time management becomes even more rel
 
 I think this class has more than anything given me an amazing confidence that I can build an NLP application end to end and have it run on anyones computer, this has been an incredible experience and I'm just scratching the surface so far, I can't wait to spend more time improving this application in the future and looking at more applications to build in the NLP space, I think up until this point I knew that I could write simple programs, but writing something like this end to end has been such an amazing experience and confidence boost overall!
 
-
+---
 ### 04/09/2026
 
 ### Last Week's Work
@@ -367,3 +367,25 @@ No real impediments except for resisting the urge to tinker which is harder than
 ### Reflections
 
 I think I realized the importance of data and corpus quality on a project like this. Over this semester I've had a solid deep dive into the data that goes into a transformer model and how much understanding it matters for the overall performance of the semantic search process. I have a new appreciation for just how much information is needed to truly test something like this.
+
+
+---
+### 04/16/2026
+
+### Last Week's Work
+
+Last week I spent my time finalizing my golden searches and queries, I moved my evaluation corpus from 10 to 15 total markdown documents, then I went into my unit test folder and wrote a test for these golden queries and testing MRR and Recall@K, I also noticed while doing this testing that I had hardcoded k=2 in my query script so I updated that to be a placeholder variable in the function so that it could be updated to test recall at 1, 3, 4, 5, etc.
+
+Then I spent some time updating my README, not as busy of a week this week as things start to slow down. I think now I'm just cleaning up my documentation and getting ready to write the final project report. I'm proud of my work and I'm excited to keep working on it and growing it even after this semester is over! I've got plans to implement it as a long term tool in my homelab documentation stores!
+
+### This Week's Work
+
+This week I'll be working on the final project report, and continuing to cleanup the README!
+
+### Impediments
+
+I don't expect any impediments pending a doomsday event where github goes away and my local files and their backups disappear! 
+
+### Reflections
+
+This has been a satisfying portion of the project looking back at what I've accomplished and working on the write-up. It's also helping me plan future improvments as well, a report and a lessons learned if you will!
