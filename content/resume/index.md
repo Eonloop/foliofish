@@ -38,7 +38,7 @@ layoutBackgroundHeaderSpace: false
   <tbody>
     <tr>
       <td width=150><img class="customEntityLogo" src="./images/TAC.png" height=150 width=100 alt="The Anschutz Corporation" /></td>
-      <td><a href="https://en.wikipedia.org/wiki/The_Anschutz_Corporation" target="_blank">The Anschutz Corporation</a></td>
+      <td><a href="https://en.wikipedia.org/wiki/The_Anschutz_Corporation" target="_blank">The Anschutz Corp.</a></td>
       <td>IT Knowledge Manager</td>
       <td>2024 - Present</td>
       <td>Hybrid<br>Denver, CO</td>
