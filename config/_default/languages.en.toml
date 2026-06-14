@@ -13,6 +13,6 @@ logo = ""
   [params.author]
     image="headshot.JPG"
     name = "Ian Jones"
-    links = [ { github = "https://github.com/eonloop" }, { linkedin = "https://www.linkedin.com/in/ianj1993/" } ]
+    links = [ { github = "https://github.com/eonloop" }, { linkedin = "https://www.linkedin.com/in/ianj1993/" }, { bluesky = "https://bsky.app/profile/eonloop.bsky.social" } ]
     headline = "Building Better Systems Through Documentation and Code"
 

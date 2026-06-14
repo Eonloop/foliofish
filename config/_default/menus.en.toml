@@ -43,6 +43,11 @@ url = "https://linkedin.com/in/ianj1993"
 identifier = "nir8zxeQez"
 weight = 9_999
 
+[[main]]
+pre = "bluesky"
+url = "https://bsky.app/profile/eonloop.bsky.social"
+identifier = "5hWKhOzSox"
+weight = 9_999
 
 [[footer]]
 none = "none"
