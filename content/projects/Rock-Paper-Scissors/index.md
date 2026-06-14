@@ -1,5 +1,6 @@
 ---
-title: "Calculator"
+title: "Rock Paper Scissors"
 date: 2023-12-21
-externalUrl: "https://ijjtech.net/rock-paper-scisssors"
+featured: featured.png
+externalUrl: "https://ijjtech.net/rock-paper-scissors"
 ---
